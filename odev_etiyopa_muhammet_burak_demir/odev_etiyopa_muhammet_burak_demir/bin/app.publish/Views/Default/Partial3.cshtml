@@ -1,0 +1,21 @@
+﻿@using odev_etiyopa_muhammet_burak_demir.Models.Siniflar
+@model List<anaresimsld>
+
+<div class="padding">
+    <h4 style="margin-left:50px">Önemli Yerleri</h4>
+    
+    <ul class="list list-pad">
+        @{ int i = 0;}
+        @foreach (var x in Model)
+        {
+            <li class="list-bg"><span>@{ i++;}@i</span><a href="https://www.tripadvisor.com.tr/Attraction_Review-g2193232-d324964-Reviews-Simien_Mountains_National_Park-Amhara_Region.html">@x.Baslik</a></li>
+            @*<li class="list-bg"><span>1.</span><a href="https://www.tripadvisor.com.tr/Attraction_Review-g2193232-d324964-Reviews-Simien_Mountains_National_Park-Amhara_Region.html">Simien Dağları Milli Parkı</a></li>
+            <li class="list-bg1"><span>2.</span><a href="https://www.tripadvisor.com.tr/Attraction_Review-g2193229-d2389833-Reviews-Danakil_Depression-Afar_Region.html">Danakil Depresyonu</a></li>
+            <li class="list-bg"><span>3.</span><a href="https://www.tripadvisor.com.tr/Hotel_Review-g676756-d1532342-Reviews-Awash_Falls_Lodge-Awash_National_Park_Afar_Region.html">Awash National Park</a></li>
+            <li class="list-bg1"><span>4.</span><a href="https://en.wikipedia.org/wiki/Obelisk_of_Axum">Obelix of Axum</a></li>
+            <li class="list-bg"><span>5.</span><a href="https://www.tripadvisor.com.tr/Attraction_Review-g293791-d2357654-Reviews-Red_Terror_Martyrs_Memorial_Museum-Addis_Ababa.html">Kızıl Terör Müzesi</a></li>
+            <li class="list-bg1"><span>6.</span><a href="https://htc.org.et/e/">Kutsal Teslis Katedrali</a></li>*@
+        }
+
+    </ul>
+</div>

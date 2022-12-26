@@ -1,0 +1,19 @@
+﻿@model odev_etiyopa_muhammet_burak_demir.Models.Siniflar.Sehir
+@{
+    ViewBag.Title = "SehirGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Şehir Güncelleme Sayfası</h2>
+<br />
+@using (Html.BeginForm("SehirGuncelle", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.ID)
+    @Html.TextBoxFor(x => x.ID  , new { @class = "form-control", @readonly="readonly" })
+    <br />
+    @Html.LabelFor(x => x.Baslik)
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Şehir Güncelle</button>
+}
+

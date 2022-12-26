@@ -1,0 +1,29 @@
+﻿@using odev_etiyopa_muhammet_burak_demir.Models.Siniflar
+@model List<Sehir>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Şehir Listesi</h2>
+<br />
+<table class="table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>BAŞLIK</th>
+        <th>SİL</th>
+        <th>GÜNCELLE</th>
+    </tr>
+    @foreach(var x in Model)
+    { 
+    <tr>
+        <td>@x.ID</td>
+        <td>@x.Baslik</td>
+        
+        <td><a href="/Admin/SehirSil/@x.ID"class="btn btn-danger">Sil</td>
+        <td><a href="/Admin/SehirGetir/@x.ID"class="btn btn-warning">Güncelle</td>
+    </tr>
+    }
+</table>
+<a href="/Admin/YeniSehir/" class="btn btn-primary">Yeni Şehir Ekle</a>
+

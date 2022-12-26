@@ -1,0 +1,71 @@
+﻿@using odev_etiyopa_muhammet_burak_demir.Models.Siniflar;
+@model List<anaresimsld>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+
+<!DOCTYPE HTML>
+<html>
+<body>    
+    <div class="header-banner">
+        <div class="wrap">
+            <div class="banner">
+                <div class="indent">
+                    <h2 class="indent-left margin-bot" style=" margin-top:40px">Etiyopya ve Bilinmeyenleri</h2>
+                    <div class="banner-left">
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="header_bottom_right_images" style="margin-left:120px">
+                        <div class="slider" style="width:720px"; height="300px">
+                            <ul class="rslides" id="slider1">
+                                @foreach(var x in Model){ 
+                                <li><img src="@x.SldImage" alt=""></li>
+                                @*<li><img src="~/web/images/IMG_0555.jpg" alt=""></li>
+                                <li><img src="~/web/images/tiya.jpg" alt=""></li>
+                                <li><img src="~/web/images/adisslid.jpg" alt=""></li>*@
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class"content">
+        <div class="wrap">
+            <div class="wrapper">
+                <div class="con-top">
+                    <h3>Etiyopya Tarihçe</h3>
+                    <p>
+                        
+                        Etiyopya bir Doğu Afrika ülkesidir. Sudan, Güney Sudan, Eritre, Cibuti, Somali, Kenya ve Uganda Etiyopya komşu ülkelerini oluşturur. Etiyopya, bilinen eski adıyla Habeşistan, Afrika kıtasında ve tarihteki en eski medeniyetlerinden biridir. Ülke kapladığı alan bakımından oldukça büyük bir yüz ölçümüne sahiptir. Etiyopya'nın Kızıldeniz boyunca uzanan sahil bölgesi ise 1993 yılında Eritre'nin bağımsızlığını ilan etmesiyle Eritre'de kalmış ve Etiyopya tamamen bir kara ülkesi olmuştur. Etiyopya denize kıyısı ülkelerden birisidir ancak ülke topraklarında irili ufaklı çok sayıda akarsu bulunmaktadır. Awash ve Wabishebele nehirleri ise en uzun Etiyopya akarsularıdır. Yine Nil nehrinin bir kolu Etiyopya topraklarından geçmektedir.
+                        Etiyopya dağlık ve platoların egemenliğinde bir coğrafi özelliği barındırırken özellikle Etiyopya'nın kuzey bölümleri ülkenin en dağlık bölgeleridir. Sismik özellikleri bulunan dağlar sayı olarak fazla olsa da faaliyet gösteren volkanlar bulunmamaktadır.
+                        Etiyopya iklimi ise Subekvatoral ve tropikal iklim hâkimiyeti altındadır. Subekvatoral iklimin yoğun olarak görüldüğü bölgelerde ise ılıman hava özellikleri etkilidir. Bu bölgelerde sıcaklık bazı dönemlerde 40 dereceye kadar çıkmaktadır. Etiyopya yağış miktarı ise yine bölgelere göre değişmektedir. Etiyopya'nın güney batı bölgelerinde 2500 mm olan yağış miktarı, ülkenin Kuzey Doğu bölgelerinde 50 mm kadar düşmektedir.
+                        Etiyopya yer altı kaynakları bakımından varsıl bir konumda bulunmazken Etiyopya'nın en önemli yer altı kaynağı tuzdur. Yeterli kadar olmasa da az miktarda platin, manganez ve altın çıkarılmaktadır. Ülkenin en önemli gelir kaynağı ise tarım ürünleridir. Halkın % 90'ı köylerde yaşarken istihdamın yine %90 tarım faaliyetlerinden sağlanır. Etiyopya topraklarının yarıya yakın kısmında ekim yapılmaktadır. İlkel bir üretim tarzı bulunan ülkede ise ürün alımı yüksek seviyelerde değildir. Etiyopya tarım ürünleri arasında en fazla elde edilen ürün ise tahıl, mısır, arpa, darı, bakliyat ve tohumlardır. Etiyopya ihraç ürünleri arasında ise ilk sırayı kahve almaktadır. Etiyopya nüfusunun % 25'i kahve sektöründen geçimini sağlar. Etiyopya doğal yaşamı dünya üzerinde oldukça önemli ve özel bölgeler arasında yer alırken Afrika'nın en fazla canlı hayvan varlığı Etiyopya toprakları üzerine yaşamaktadır. Avcılık ülke halkı için önemli bir gelir kaynağı teşkil ederken yabani hayvanlardan elde edilen deri ve postlar Etiyopya ihraç ürünleri arasında ciddi bir orana tekabül etmektedir.
+
+                    </p>
+                   
+
+                   
+                </div>
+                @Html.Action("Partial1","Default")
+                <div class="grids" style="margin-left:350px">
+                    <div class="box1">
+                        @Html.Action("Partial3","Default")
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+

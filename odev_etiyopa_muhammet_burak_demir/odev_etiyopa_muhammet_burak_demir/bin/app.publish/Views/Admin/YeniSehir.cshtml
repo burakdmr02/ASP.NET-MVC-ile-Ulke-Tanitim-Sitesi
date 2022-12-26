@@ -1,0 +1,15 @@
+﻿@model odev_etiyopa_muhammet_burak_demir.Models.Siniflar.Sehir
+@{
+    ViewBag.Title = "YeniSehir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Şehir Ekleme</h2>
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x=>x.Baslik)
+    @Html.TextBoxFor(x=>x.Baslik, new { @class ="form-control"})
+    <br />
+    <button class="btn btn-primary">Şehir Ekle</button>
+    
+</form>

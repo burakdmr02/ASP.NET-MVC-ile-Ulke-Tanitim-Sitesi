@@ -1,0 +1,21 @@
+﻿@using odev_etiyopa_muhammet_burak_demir.Models.Siniflar
+@model List<anaresimsld>
+<div class="con-bot">
+    @foreach(var x in Model) {
+    <div class="left">
+        <div class="bot-left">
+            <img src="@x.SldImage"style="width:300px"; height="150px" alt="" />
+        </div>
+        <div class="left-text">
+            <h4>@x.Baslik</h4>
+
+            <p>@x.Aciklama</p>
+
+        </div>
+    </div>
+    }
+    @Html.Action("Partial2", "Default");
+    
+    <div class="clear"></div>
+</div>
+

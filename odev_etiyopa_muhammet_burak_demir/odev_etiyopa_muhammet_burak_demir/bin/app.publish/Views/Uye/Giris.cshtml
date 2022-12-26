@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Giris";
+}
+
+<h2>Giriş Yap</h2>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <img src="https://cdn-icons-png.flaticon.com/512/6681/6681204.png" id="icon" alt="User Icon" />
+        </div>
+
+        <!-- Login Form -->
+        <form action="post">
+            <input type="text" id="KulAdi" class="fadeIn second" name="KulAdi" placeholder="login">
+            <input type="text" id="Parola" class="fadeIn third" name="Parola" placeholder="password">
+            <input type="submit" class="fadeIn fourth" value="Giriş Yap">
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <a class="underlineHover" href="#">Parolamı Unuttum</a> <br />
+            <a class="underlineHover" href="#">Kaydolmak İstiyorum</a>
+        </div>
+
+    </div>
+</div>
